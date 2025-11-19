@@ -13,19 +13,19 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "VES et Vous - Ménage, Garde d'Enfants & Repassage | Rezé, Bouguenais, Bouaye",
-  description: "Services à domicile personnalisés : ménage complet, garde d'enfants +3 ans, repassage. Intervention à Rezé, Bouguenais, Bouaye, La Montagne, Saint-Jean-de-Boiseau. Avance immédiate URSSAF, crédit d'impôt 50%.",
-  keywords: "ménage à domicile Rezé, garde enfants Bouguenais, repassage Bouaye, aide à domicile Nantes, service ménage La Montagne, baby-sitting Saint-Jean-de-Boiseau, CESU, crédit impôt service à la personne",
+  title: "VES et Vous | Aide à Domicile Rezé, Bouguenais, Bouaye - Ménage, Garde d'Enfants, Repassage",
+  description: "Service d'aide à domicile à Rezé, Bouguenais, Bouaye : ménage domicile et bureaux, garde d'enfants, repassage. Devis gratuit par téléphone.",
+  keywords: "aide à domicile Rezé, ménage à domicile Bouguenais, femme de ménage Bouaye, garde d'enfants La Montagne, repassage à domicile Saint-Jean-de-Boiseau, nettoyage bureau Rezé, services ménagers 44, CESU, crédit impôt 50%",
   authors: [{ name: "VES et Vous" }],
   openGraph: {
-    title: "VES et Vous - Services à Domicile Personnalisés",
-    description: "Ménage complet, garde d'enfants, repassage à Rezé, Bouguenais, Bouaye, La Montagne, Saint-Jean-de-Boiseau. Avance immédiate URSSAF.",
+    title: "VES et Vous | Aide à Domicile Rezé, Bouguenais, Bouaye",
+    description: "Ménage domicile et bureaux, garde d'enfants, repassage à Rezé, Bouguenais, Bouaye, La Montagne, Saint-Jean-de-Boiseau. Devis gratuit.",
     type: "website",
     locale: "fr_FR",
   },
   twitter: {
     card: "summary_large_image",
-    title: "VES et Vous - Services à Domicile",
+    title: "VES et Vous - Aide à Domicile Loire-Atlantique",
     description: "Ménage, garde d'enfants, repassage. Rezé, Bouguenais, Bouaye et communes voisines.",
   },
   robots: {
@@ -48,8 +48,77 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  const schemaOrgData = {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "VES et Vous",
+    "description": "Services d'aide à domicile : ménage, garde d'enfants, repassage à Rezé, Bouguenais, Bouaye, La Montagne et Saint-Jean-de-Boiseau",
+    "telephone": "+33603163070",
+    "email": "sandra.venturini44@gmail.com",
+    "areaServed": [
+      {
+        "@type": "City",
+        "name": "Rezé"
+      },
+      {
+        "@type": "City",
+        "name": "Bouguenais"
+      },
+      {
+        "@type": "City",
+        "name": "Bouaye"
+      },
+      {
+        "@type": "City",
+        "name": "La Montagne"
+      },
+      {
+        "@type": "City",
+        "name": "Saint-Jean-de-Boiseau"
+      }
+    ],
+    "priceRange": "25€/heure",
+    "openingHours": "Mo-Fr 08:00-20:00, Sa 09:00-18:00",
+    "hasOfferCatalog": {
+      "@type": "OfferCatalog",
+      "name": "Services à domicile",
+      "itemListElement": [
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Ménage à Domicile et Bureaux",
+            "description": "Service de ménage régulier ou ponctuel pour domiciles et locaux professionnels"
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Garde d'Enfants à Domicile",
+            "description": "Garde d'enfants occasionnelle ou régulière avec sorties d'école"
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Repassage à Domicile",
+            "description": "Service de repassage professionnel à domicile ou avec retrait/livraison"
+          }
+        }
+      ]
+    }
+  };
+
   return (
     <html lang="fr">
+      <head>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaOrgData) }}
+        />
+      </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >

@@ -1,22 +1,24 @@
 export default function Services() {
   const services = [
     {
-      title: 'Ménage Complet',
+      title: 'Ménage à Domicile et Bureaux',
       price: '25€/heure',
-      description: 'Nettoyage approfondi de votre domicile',
+      description: 'Service de ménage régulier ou ponctuel pour votre domicile et vos locaux professionnels à Rezé, Bouguenais, Bouaye, La Montagne et Saint-Jean-de-Boiseau',
       features: [
-        'Nettoyage de toutes les pièces',
-        'Repassage inclus',
-        'Produits d\'entretien fournis',
-        'Personnel qualifié et de confiance'
+        'Nettoyage complet domiciles et bureaux',
+        'Intervention régulière ou ponctuelle',
+        'Produits d\'entretien professionnels fournis',
+        'Personnel qualifié et de confiance',
+        'Devis gratuit sur demande'
       ]
     },
     {
-      title: 'Garde d\'Enfants',
+      title: 'Garde d\'Enfants à Domicile',
       price: '25€/heure',
-      description: 'Accompagnement bienveillant de vos enfants',
+      description: 'Garde d\'enfants occasionnelle ou régulière avec sorties d\'école dans votre commune : Rezé, Bouguenais, Bouaye, La Montagne',
       features: [
-        'Sortie d\'école et activités',
+        'Garde occasionnelle ou régulière',
+        'Sorties d\'école et activités',
         'Baby-sitting pour enfants de 3 ans et plus',
         'Aide aux devoirs',
         'Personnel expérimenté et sécurisé'
@@ -25,11 +27,12 @@ export default function Services() {
     {
       title: 'Repassage à Domicile',
       price: '25€/heure',
-      description: 'Service de repassage professionnel chez vous',
+      description: 'Service de repassage professionnel à domicile ou avec retrait et livraison sur Rezé, Bouguenais, Bouaye et communes voisines',
       features: [
+        'Repassage professionnel à domicile',
+        'Option retrait et livraison disponible',
         'Repassage soigné de tous vos vêtements',
         'Pliage et rangement inclus',
-        'Matériel professionnel fourni',
         'Gain de temps précieux'
       ]
     }

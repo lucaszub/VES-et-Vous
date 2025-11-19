@@ -1,6 +1,7 @@
 import Navigation from "./components/Navigation";
 import Hero from "./components/Hero";
 import Services from "./components/Services";
+import Zones from "./components/Zones";
 import Appointment from "./components/Appointment";
 import AdvanceImmédiate from "./components/AdvanceImmediate";
 import About from "./components/About";
@@ -15,6 +16,7 @@ export default function Home() {
       <main>
         <Hero />
         <Services />
+        <Zones />
         <Appointment />
         <AdvanceImmédiate />
         <About />

@@ -4,9 +4,12 @@ export default function About() {
   return (
     <section id="about" className="section" style={{ backgroundColor: '#E1F0F7' }}>
       <div className="container">
-        <h2 className="text-4xl font-bold text-center mb-12" style={{ color: 'var(--primary-blue)' }}>
+        <h2 className="text-3xl md:text-4xl font-bold text-center mb-4" style={{ color: 'var(--primary-blue)' }}>
           Qui Sommes-Nous ?
         </h2>
+        <p className="text-center text-gray-600 mb-8 md:mb-12 text-base md:text-lg">
+          Agence de services d'aide à domicile à Rezé et alentours
+        </p>
 
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <div>
@@ -42,7 +45,7 @@ export default function About() {
                 </li>
                 <li className="flex items-start">
                   <span className="mr-2" style={{ color: 'var(--orange)' }}>✓</span>
-                  Avantages fiscaux optimisés
+                  Crédit d'impôt 50% - Avance immédiate URSSAF
                 </li>
               </ul>
             </div>

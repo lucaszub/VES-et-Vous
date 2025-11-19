@@ -14,34 +14,35 @@ export default function Hero() {
     >
       <div className="absolute inset-0 bg-black/40"></div>
       <div className="max-w-4xl mx-auto text-center relative z-10 px-6">
-        <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white drop-shadow-2xl leading-tight mb-8">
-          Aide à Domicile
+        <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white drop-shadow-2xl leading-tight mb-6">
+          Aide à Domicile Rezé et Alentours
           <br />
-          Rezé, Bouguenais, Bouaye et communes voisines
+          <span className="text-3xl md:text-4xl lg:text-5xl">Services Ménagers, Garde d'Enfants, Repassage</span>
         </h1>
+        <p className="text-xl md:text-2xl text-white drop-shadow-xl font-light mb-6">
+          Rezé • Bouguenais • La Montagne • Bouaye • Saint-Jean-de-Boiseau
+        </p>
         <p className="text-xl md:text-2xl lg:text-3xl text-white drop-shadow-xl font-light leading-relaxed mb-8">
           Votre tranquillité d'esprit,
           <br />
           notre priorité
         </p>
-        <p
-          className="text-base md:text-lg lg:text-xl max-w-3xl mx-auto text-white drop-shadow-lg leading-relaxed"
-          style={{ marginBottom: "2rem" }}
-        >
-          Services professionnels de ménage complet, garde d'enfants de plus de 3 ans,
-          et repassage à domicile
-        </p>
         <div
           className="flex flex-col md:flex-row gap-4 justify-center"
           style={{ marginTop: "2rem" }}
         >
-          <a href="#rdv" className="btn btn-primary">
-            Prendre rendez-vous
+          <a href="tel:+33603163070" className="btn btn-primary">
+            📞 Appelez-nous maintenant
           </a>
-          <a href="#services" className="btn btn-secondary">
-            Découvrir nos services
+          <a href="sms:+33603163070" className="btn btn-secondary">
+            💬 Envoyez un SMS
           </a>
         </div>
+        <p className="text-white text-lg md:text-xl mt-6 drop-shadow-lg">
+          <a href="tel:+33603163070" className="hover:underline font-semibold">
+            06.03.16.30.70
+          </a>
+        </p>
       </div>
     </section>
   );
