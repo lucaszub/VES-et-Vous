@@ -6,7 +6,7 @@ export default function Footer() {
           <div>
             <h3 className="text-2xl font-bold mb-4">VES et Vous</h3>
             <p className="mb-4">
-              Services à domicile de qualité sur Nantes et alentours
+              Services à domicile de qualité sur Rezé, Bouguenais, Bouaye, La Montagne et Saint-Jean-de-Boiseau
             </p>
             <p className="text-sm opacity-90">
               Agrément SAP n° [Numéro d'agrément]
@@ -29,7 +29,7 @@ export default function Footer() {
                 </a>
               </p>
               <p>
-                <strong>Zone :</strong> Nantes et alentours
+                <strong>Zone :</strong> Rezé, Bouguenais, Bouaye, La Montagne, Saint-Jean-de-Boiseau
               </p>
             </div>
           </div>

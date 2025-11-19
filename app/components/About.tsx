@@ -15,7 +15,7 @@ export default function About() {
             </h3>
             <p className="mb-4 text-lg">
               Ancienne Maître d'Hôtel, j'ai créé VES et Vous pour apporter des services de qualité à domicile
-              sur Nantes et ses alentours.
+              sur Rezé, Bouguenais, Bouaye, La Montagne et Saint-Jean-de-Boiseau.
             </p>
             <p className="mb-4">
               Fort de mon expérience dans le service haut de gamme, j'ai à cœur de sélectionner uniquement

@@ -23,14 +23,14 @@ export default function Services() {
       ]
     },
     {
-      title: 'Accompagnement Senior',
+      title: 'Repassage à Domicile',
       price: '25€/heure',
-      description: 'Soutien et présence pour vos proches',
+      description: 'Service de repassage professionnel chez vous',
       features: [
-        'Aide aux courses et aux repas',
-        'Compagnie et sorties',
-        'Maintien à domicile en toute sécurité',
-        'Personnel formé et empathique'
+        'Repassage soigné de tous vos vêtements',
+        'Pliage et rangement inclus',
+        'Matériel professionnel fourni',
+        'Gain de temps précieux'
       ]
     }
   ];
@@ -38,14 +38,14 @@ export default function Services() {
   return (
     <section id="services" className="section" style={{ backgroundColor: '#ffffff' }}>
       <div className="container">
-        <h2 className="text-4xl font-bold text-center mb-4" style={{ color: 'var(--primary-blue)' }}>
+        <h2 className="text-3xl md:text-4xl font-bold text-center mb-4" style={{ color: 'var(--primary-blue)' }}>
           Nos Services
         </h2>
-        <p className="text-center text-gray-600 mb-12 text-lg">
+        <p className="text-center text-gray-600 mb-8 md:mb-12 text-base md:text-lg">
           Des prestations de qualité adaptées à vos besoins
         </p>
 
-        <div className="grid md:grid-cols-3 gap-8">
+        <div className="grid md:grid-cols-3 gap-6 md:gap-8">
           {services.map((service, index) => (
             <div key={index} className="card">
               <h3 className="text-2xl font-bold mb-3" style={{ color: 'var(--primary-blue)' }}>

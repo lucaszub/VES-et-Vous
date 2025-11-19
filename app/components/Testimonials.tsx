@@ -12,8 +12,8 @@ export default function Testimonials() {
     },
     {
       name: 'Sophie T.',
-      service: 'Accompagnement senior',
-      text: 'Ma mère apprécie énormément les visites. Cela lui permet de rester chez elle en toute sécurité. Merci pour votre professionnalisme !'
+      service: 'Repassage',
+      text: 'Un service de repassage impeccable ! Tout est parfaitement repassé et plié. Je gagne un temps précieux. Merci pour votre professionnalisme !'
     }
   ];
 

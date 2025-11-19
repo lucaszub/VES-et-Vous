@@ -17,7 +17,7 @@ export default function Hero() {
         <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white drop-shadow-2xl leading-tight mb-8">
           Aide à Domicile
           <br />
-          Nantes et alentours
+          Rezé, Bouguenais, Bouaye et communes voisines
         </h1>
         <p className="text-xl md:text-2xl lg:text-3xl text-white drop-shadow-xl font-light leading-relaxed mb-8">
           Votre tranquillité d'esprit,
@@ -28,8 +28,8 @@ export default function Hero() {
           className="text-base md:text-lg lg:text-xl max-w-3xl mx-auto text-white drop-shadow-lg leading-relaxed"
           style={{ marginBottom: "2rem" }}
         >
-          Services professionnels de ménage, garde d'enfants de plus de 3 ans,
-          entretien de la maison, Gardiennage
+          Services professionnels de ménage complet, garde d'enfants de plus de 3 ans,
+          et repassage à domicile
         </p>
         <div
           className="flex flex-col md:flex-row gap-4 justify-center"
