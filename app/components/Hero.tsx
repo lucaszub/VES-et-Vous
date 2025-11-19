@@ -4,7 +4,8 @@ export default function Hero() {
       id="accueil"
       className="relative flex items-center justify-center px-6"
       style={{
-        height: "85vh",
+        height: "100vh",
+        marginTop: "80px",
         backgroundImage:
           "url(https://images.unsplash.com/photo-1600880292203-757bb62b4baf?ixlib=rb-4.0.3&auto=format&fit=crop&w=1350&q=80)",
         backgroundSize: "cover",
@@ -15,9 +16,11 @@ export default function Hero() {
       <div className="absolute inset-0 bg-black/40"></div>
       <div className="max-w-4xl mx-auto text-center relative z-10 px-6">
         <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white drop-shadow-2xl leading-tight mb-6">
-          Aide à Domicile Rezé et Alentours
+          {/* Aide à Domicile Rezé et Alentours */}
           <br />
-          <span className="text-3xl md:text-4xl lg:text-5xl">Services Ménagers, Garde d'Enfants, Repassage</span>
+          <span className="text-3xl md:text-4xl lg:text-5xl">
+            Services Ménagers, Garde d'Enfants, Repassage
+          </span>
         </h1>
         <p className="text-xl md:text-2xl text-white drop-shadow-xl font-light mb-6">
           Rezé • Bouguenais • La Montagne • Bouaye • Saint-Jean-de-Boiseau
@@ -28,7 +31,7 @@ export default function Hero() {
           notre priorité
         </p>
         <div
-          className="flex flex-col md:flex-row gap-4 justify-center"
+          className="flex flex-col md:flex-row gap-4 justify-center px-8 md:px-0"
           style={{ marginTop: "2rem" }}
         >
           <a href="tel:+33603163070" className="btn btn-primary">

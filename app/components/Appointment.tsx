@@ -32,12 +32,12 @@ export default function Appointment() {
     >
       <div className="container max-w-2xl">
         <h2
-          className="text-4xl font-bold text-center mb-4"
-          style={{ color: "var(--primary-blue)" }}
+          className="text-3xl md:text-4xl font-bold text-center"
+          style={{ color: "var(--primary-blue)", marginBottom: "1.5rem" }}
         >
           Prendre Rendez-vous
         </h2>
-        <p className="text-center text-gray-600 mb-12">
+        <p className="text-center text-gray-600 text-base md:text-lg" style={{ marginBottom: "3rem" }}>
           Remplissez le formulaire ci-dessous et nous vous recontacterons dans
           les plus brefs délais
         </p>
@@ -57,9 +57,9 @@ export default function Appointment() {
               className="form-select"
             >
               <option value="">Sélectionnez un service</option>
-              <option value="ménage">Ménage Complet</option>
-              <option value="garde">Garde d'Enfants</option>
-              <option value="senior">Accompagnement Senior</option>
+              <option value="ménage">Ménage à Domicile et Bureaux</option>
+              <option value="garde">Garde d'Enfants à Domicile</option>
+              <option value="repassage">Repassage à Domicile</option>
             </select>
           </div>
 

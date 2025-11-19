@@ -25,34 +25,35 @@ export default function Zones() {
   return (
     <section id="zones" className="section" style={{ backgroundColor: 'var(--light-blue)' }}>
       <div className="container">
-        <h2 className="text-3xl md:text-4xl font-bold text-center mb-4" style={{ color: 'var(--primary-blue)' }}>
+        <h2 className="text-3xl md:text-4xl font-bold text-center" style={{ color: 'var(--primary-blue)', marginBottom: '1.5rem' }}>
           Nous Intervenons Dans Votre Commune
         </h2>
-        <p className="text-center text-gray-600 mb-8 md:mb-12 text-base md:text-lg">
+        <p className="text-center text-gray-600 text-base md:text-lg" style={{ marginBottom: '4rem' }}>
           Services d'aide à domicile de qualité dans 5 communes de Loire-Atlantique
         </p>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3" style={{ gap: '2rem' }}>
           {zones.map((zone, index) => (
             <div
               key={index}
-              className="bg-white rounded-lg p-6 shadow-md hover:shadow-lg transition-shadow"
+              className="bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow"
+              style={{ padding: '2rem' }}
             >
               <div className="flex items-start">
-                <span className="text-2xl mr-3" style={{ color: 'var(--orange)' }}>📍</span>
+                <span className="text-3xl" style={{ color: 'var(--orange)', marginRight: '1rem' }}>📍</span>
                 <div>
-                  <h3 className="text-xl font-bold mb-2" style={{ color: 'var(--primary-blue)' }}>
+                  <h3 className="text-2xl font-bold" style={{ color: 'var(--primary-blue)', marginBottom: '0.75rem' }}>
                     {zone.ville}
                   </h3>
-                  <p className="text-gray-600 text-sm">{zone.services}</p>
+                  <p className="text-gray-600" style={{ fontSize: '1rem' }}>{zone.services}</p>
                 </div>
               </div>
             </div>
           ))}
         </div>
 
-        <div className="mt-8 text-center">
-          <p className="text-gray-700">
+        <div className="text-center" style={{ marginTop: '4rem' }}>
+          <p className="text-gray-700" style={{ fontSize: '1.125rem' }}>
             <strong>Zone de couverture :</strong> Rezé, Bouguenais, Bouaye, La Montagne, Saint-Jean-de-Boiseau et communes limitrophes
           </p>
         </div>

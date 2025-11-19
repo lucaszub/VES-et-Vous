@@ -1,61 +1,367 @@
 export default function AdvanceImmediate() {
   return (
-    <section id="avance" className="section" style={{ backgroundColor: '#ffffff' }}>
-      <div className="container max-w-2xl">
-        <h2 className="text-4xl font-bold text-center mb-4" style={{ color: 'var(--primary-blue)' }}>
-          Avance Immédiate URSSAF
+    <section
+      id="avance"
+      className="section"
+      style={{ backgroundColor: "#ffffff" }}
+    >
+      <div className="container" style={{ maxWidth: "900px" }}>
+        <h2
+          className="text-3xl md:text-4xl font-bold text-center"
+          style={{ color: "var(--primary-blue)", marginBottom: "1.5rem" }}
+        >
+          Crédit d'Impôt 50% pour Vos Services à Domicile
         </h2>
-        <p className="text-center text-gray-600 mb-12 text-lg">
-          Bénéficiez de votre crédit d'impôt sans attendre !
+        <p
+          className="text-center text-gray-600 text-base md:text-lg"
+          style={{ marginBottom: "3rem" }}
+        >
+          Avance immédiate URSSAF : bénéficiez de votre crédit d'impôt sans
+          attendre !
         </p>
 
-        <div>
-          <div className="card mb-8" style={{ backgroundColor: '#E1F0F7' }}>
-            <h3 className="text-2xl font-bold mb-4 text-center" style={{ color: 'var(--primary-blue)' }}>
-              Comment ça marche ?
-            </h3>
-            <p className="mb-6 text-lg text-center">
-              Avec le dispositif d'avance immédiate, vous ne payez que 50% du coût de vos services à domicile.
-              L'URSSAF vous verse directement les 50% restants sous forme de crédit d'impôt, sans attendre votre déclaration annuelle.
-            </p>
+        {/* Qu'est-ce que l'avance immédiate */}
+        <div
+          className="card"
+          style={{ backgroundColor: "#E1F0F7", marginBottom: "2rem" }}
+        >
+          <h3
+            className="text-2xl font-bold"
+            style={{ color: "var(--primary-blue)", marginBottom: "1rem" }}
+          >
+            Qu'est-ce que l'avance immédiate ?
+          </h3>
+          <p className="text-lg" style={{ lineHeight: "1.8" }}>
+            L'avance immédiate est un dispositif qui vous permet d'obtenir
+            immédiatement le montant de la réduction d'impôt ou du crédit
+            d'impôt auquel vous avez droit, sans attendre votre déclaration
+            fiscale.
+          </p>
+        </div>
 
-            <div className="grid md:grid-cols-3 gap-6 mb-6">
-              <div className="bg-white p-4 rounded-lg">
-                <div className="text-3xl font-bold mb-2" style={{ color: 'var(--orange)' }}>1</div>
-                <h4 className="font-bold mb-2">Déclaration</h4>
-                <p className="text-sm">Nous déclarons vos heures à l'URSSAF</p>
+        {/* Avantages principaux */}
+        <div className="card" style={{ marginBottom: "2rem" }}>
+          <h3
+            className="text-2xl font-bold"
+            style={{ color: "var(--primary-blue)", marginBottom: "1.5rem" }}
+          >
+            Avantages principaux
+          </h3>
+          <ul style={{ display: "flex", flexDirection: "column", gap: "1rem" }}>
+            <li className="flex items-start">
+              <span
+                style={{
+                  color: "var(--orange)",
+                  marginRight: "0.75rem",
+                  fontSize: "1.25rem",
+                }}
+              >
+                ✓
+              </span>
+              <span style={{ fontSize: "1.125rem" }}>
+                Obtenez jusqu'à 50% du montant de vos dépenses en aide à
+                domicile
+              </span>
+            </li>
+            <li className="flex items-start">
+              <span
+                style={{
+                  color: "var(--orange)",
+                  marginRight: "0.75rem",
+                  fontSize: "1.25rem",
+                }}
+              >
+                ✓
+              </span>
+              <span style={{ fontSize: "1.125rem" }}>
+                Paiement direct par l'URSSAF sans avance de frais
+              </span>
+            </li>
+            <li className="flex items-start">
+              <span
+                style={{
+                  color: "var(--orange)",
+                  marginRight: "0.75rem",
+                  fontSize: "1.25rem",
+                }}
+              >
+                ✓
+              </span>
+              <span style={{ fontSize: "1.125rem" }}>
+                Simplification administrative
+              </span>
+            </li>
+          </ul>
+        </div>
+
+        {/* Conditions d'éligibilité */}
+        <div
+          className="card"
+          style={{ backgroundColor: "#E1F0F7", marginBottom: "2rem" }}
+        >
+          <h3
+            className="text-2xl font-bold"
+            style={{ color: "var(--primary-blue)", marginBottom: "1.5rem" }}
+          >
+            Conditions d'éligibilité
+          </h3>
+          <div
+            style={{
+              backgroundColor: "white",
+              padding: "1.5rem",
+              borderRadius: "8px",
+              marginBottom: "1.5rem",
+              borderLeft: "4px solid var(--orange)",
+            }}
+          >
+            <p
+              style={{
+                fontSize: "1.125rem",
+                fontWeight: "600",
+                color: "var(--primary-blue)",
+              }}
+            >
+              Je me propose de tout mettre en place pour vous de l'inscription à
+              la déclaration
+            </p>
+          </div>
+          <ul style={{ display: "flex", flexDirection: "column", gap: "1rem" }}>
+            <li className="flex items-start">
+              <span
+                style={{
+                  color: "var(--orange)",
+                  marginRight: "0.75rem",
+                  fontSize: "1.25rem",
+                }}
+              >
+                ✓
+              </span>
+              <span style={{ fontSize: "1.125rem" }}>
+                Être particulier employeur déclaré à l'URSSAF
+              </span>
+            </li>
+            <li className="flex items-start">
+              <span
+                style={{
+                  color: "var(--orange)",
+                  marginRight: "0.75rem",
+                  fontSize: "1.25rem",
+                }}
+              >
+                ✓
+              </span>
+              <span style={{ fontSize: "1.125rem" }}>
+                Utiliser des services éligibles (ménage, garde d'enfants, etc.)
+              </span>
+            </li>
+            <li className="flex items-start">
+              <span
+                style={{
+                  color: "var(--orange)",
+                  marginRight: "0.75rem",
+                  fontSize: "1.25rem",
+                }}
+              >
+                ✓
+              </span>
+              <span style={{ fontSize: "1.125rem" }}>
+                Respecter les plafonds annuels de dépenses
+              </span>
+            </li>
+            <li className="flex items-start">
+              <span
+                style={{
+                  color: "var(--orange)",
+                  marginRight: "0.75rem",
+                  fontSize: "1.25rem",
+                }}
+              >
+                ✓
+              </span>
+              <span style={{ fontSize: "1.125rem" }}>
+                Avoir un compte bancaire enregistré auprès de l'URSSAF
+              </span>
+            </li>
+          </ul>
+        </div>
+
+        {/* Comment ça fonctionne */}
+        <div className="card" style={{ marginBottom: "2rem" }}>
+          <h3
+            className="text-2xl font-bold text-center"
+            style={{ color: "var(--primary-blue)", marginBottom: "0.5rem" }}
+          >
+            Comment ça fonctionne ?
+          </h3>
+
+          <div className="grid md:grid-cols-3" style={{ gap: "2rem" }}>
+            <div className="text-center">
+              <div
+                className="text-4xl font-bold"
+                style={{ color: "var(--orange)", marginBottom: "1rem" }}
+              >
+                1
               </div>
-              <div className="bg-white p-4 rounded-lg">
-                <div className="text-3xl font-bold mb-2" style={{ color: 'var(--orange)' }}>2</div>
-                <h4 className="font-bold mb-2">Calcul automatique</h4>
-                <p className="text-sm">L'URSSAF calcule votre crédit d'impôt</p>
+              <h4
+                className="font-bold text-xl"
+                style={{
+                  color: "var(--primary-blue)",
+                  marginBottom: "0.75rem",
+                }}
+              >
+                Déclaration
+              </h4>
+              <p style={{ fontSize: "1rem" }}>
+                Déclarez vos heures travaillées chaque mois via le compte URSSAF
+              </p>
+            </div>
+            <div className="text-center">
+              <div
+                className="text-4xl font-bold"
+                style={{ color: "var(--orange)", marginBottom: "1rem" }}
+              >
+                2
               </div>
-              <div className="bg-white p-4 rounded-lg">
-                <div className="text-3xl font-bold mb-2" style={{ color: 'var(--orange)' }}>3</div>
-                <h4 className="font-bold mb-2">Versement rapide</h4>
-                <p className="text-sm">Vous recevez 50% sous 48h</p>
+              <h4
+                className="font-bold text-xl"
+                style={{
+                  color: "var(--primary-blue)",
+                  marginBottom: "0.75rem",
+                }}
+              >
+                Calcul
+              </h4>
+              <p style={{ fontSize: "1rem" }}>
+                L'URSSAF calcule automatiquement votre avantage fiscal
+              </p>
+            </div>
+            <div className="text-center">
+              <div
+                className="text-4xl font-bold"
+                style={{ color: "var(--orange)", marginBottom: "1rem" }}
+              >
+                3
               </div>
+              <h4
+                className="font-bold text-xl"
+                style={{
+                  color: "var(--primary-blue)",
+                  marginBottom: "0.75rem",
+                }}
+              >
+                Paiement
+              </h4>
+              <p style={{ fontSize: "1rem" }}>
+                Le montant est versé directement sur votre compte sous 48h
+              </p>
             </div>
           </div>
+        </div>
 
-          <div className="card">
-            <h3 className="text-2xl font-bold mb-4 text-center" style={{ color: 'var(--primary-blue)' }}>
-              Plafonds annuels 2023
+        {/* Plafonds et Taux */}
+        <div className="grid md:grid-cols-2" style={{ gap: "2rem" }}>
+          {/* Plafonds 2023 */}
+          <div className="card" style={{ backgroundColor: "#E1F0F7" }}>
+            <h3
+              className="text-xl font-bold text-center"
+              style={{ color: "var(--primary-blue)", marginBottom: "1.5rem" }}
+            >
+              Plafonds 2023
             </h3>
-            <div className="space-y-4">
-              <div className="flex justify-between items-center p-3 bg-gray-50 rounded">
-                <span className="font-semibold">Ménage</span>
-                <span style={{ color: 'var(--orange)' }} className="font-bold">12 000€</span>
-              </div>
-              <div className="flex justify-between items-center p-3 bg-gray-50 rounded">
-                <span className="font-semibold">Garde d'enfants</span>
-                <span style={{ color: 'var(--orange)' }} className="font-bold">15 000€</span>
-              </div>
-              <div className="flex justify-between items-center p-3 bg-gray-50 rounded">
-                <span className="font-semibold">Accompagnement senior / handicap</span>
-                <span style={{ color: 'var(--orange)' }} className="font-bold">20 000€</span>
-              </div>
-            </div>
+            <ul
+              style={{ display: "flex", flexDirection: "column", gap: "1rem" }}
+            >
+              <li
+                className="flex justify-between items-center"
+                style={{
+                  padding: "0.75rem",
+                  backgroundColor: "white",
+                  borderRadius: "8px",
+                }}
+              >
+                <span style={{ fontWeight: "600" }}>Ménage/Repassage</span>
+                <span
+                  style={{
+                    color: "var(--orange)",
+                    fontWeight: "bold",
+                    fontSize: "1.25rem",
+                  }}
+                >
+                  12 000€/an
+                </span>
+              </li>
+              <li
+                className="flex justify-between items-center"
+                style={{
+                  padding: "0.75rem",
+                  backgroundColor: "white",
+                  borderRadius: "8px",
+                }}
+              >
+                <span style={{ fontWeight: "600" }}>Garde d'enfants</span>
+                <span
+                  style={{
+                    color: "var(--orange)",
+                    fontWeight: "bold",
+                    fontSize: "1.25rem",
+                  }}
+                >
+                  15 000€/an
+                </span>
+              </li>
+            </ul>
+          </div>
+
+          {/* Taux de remboursement */}
+          <div className="card" style={{ backgroundColor: "#E1F0F7" }}>
+            <h3
+              className="text-xl font-bold text-center"
+              style={{ color: "var(--primary-blue)", marginBottom: "1.5rem" }}
+            >
+              Taux de remboursement
+            </h3>
+            <ul
+              style={{ display: "flex", flexDirection: "column", gap: "1rem" }}
+            >
+              <li
+                className="flex justify-between items-center"
+                style={{
+                  padding: "0.75rem",
+                  backgroundColor: "white",
+                  borderRadius: "8px",
+                }}
+              >
+                <span style={{ fontWeight: "600" }}>Ménage</span>
+                <span
+                  style={{
+                    color: "var(--orange)",
+                    fontWeight: "bold",
+                    fontSize: "1.5rem",
+                  }}
+                >
+                  50%
+                </span>
+              </li>
+              <li
+                className="flex justify-between items-center"
+                style={{
+                  padding: "0.75rem",
+                  backgroundColor: "white",
+                  borderRadius: "8px",
+                }}
+              >
+                <span style={{ fontWeight: "600" }}>Garde d'enfants</span>
+                <span
+                  style={{
+                    color: "var(--orange)",
+                    fontWeight: "bold",
+                    fontSize: "1.5rem",
+                  }}
+                >
+                  50%
+                </span>
+              </li>
+            </ul>
           </div>
         </div>
       </div>
