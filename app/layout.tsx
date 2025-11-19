@@ -13,20 +13,20 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "VES et Vous | Aide à Domicile Rezé, Bouguenais, Bouaye - Ménage, Garde d'Enfants, Repassage",
-  description: "Service d'aide à domicile à Rezé, Bouguenais, Bouaye : ménage domicile et bureaux, garde d'enfants, repassage. Devis gratuit par téléphone.",
-  keywords: "aide à domicile Rezé, ménage à domicile Bouguenais, femme de ménage Bouaye, garde d'enfants La Montagne, repassage à domicile Saint-Jean-de-Boiseau, nettoyage bureau Rezé, services ménagers 44, CESU, crédit impôt 50%",
+  title: "Aide à Domicile Rezé, Bouguenais, Bouaye | VES et Vous - Crédit Impôt 50%",
+  description: "Profitez de votre famille ! VES et Vous : ménage, garde d'enfants, repassage à Rezé et alentours. Crédit d'impôt 50%, intervenants qualifiés, 100% clients satisfaits. Devis gratuit 📞",
+  keywords: "aide à domicile Rezé, ménage à domicile Bouguenais, femme de ménage Bouaye, garde d'enfants La Montagne, repassage à domicile Saint-Jean-de-Boiseau, nettoyage bureau Rezé, services ménagers 44, CESU, crédit impôt 50%, services à la personne",
   authors: [{ name: "VES et Vous" }],
   openGraph: {
-    title: "VES et Vous | Aide à Domicile Rezé, Bouguenais, Bouaye",
-    description: "Ménage domicile et bureaux, garde d'enfants, repassage à Rezé, Bouguenais, Bouaye, La Montagne, Saint-Jean-de-Boiseau. Devis gratuit.",
+    title: "VES et Vous | Services à Domicile Rezé - Crédit Impôt 50%",
+    description: "Profitez de votre famille ! Ménage, garde d'enfants, repassage à Rezé, Bouguenais, Bouaye. Intervenants qualifiés, 100% clients satisfaits.",
     type: "website",
     locale: "fr_FR",
   },
   twitter: {
     card: "summary_large_image",
-    title: "VES et Vous - Aide à Domicile Loire-Atlantique",
-    description: "Ménage, garde d'enfants, repassage. Rezé, Bouguenais, Bouaye et communes voisines.",
+    title: "VES et Vous - Services à Domicile Loire-Atlantique",
+    description: "Ménage, garde d'enfants, repassage. Crédit d'impôt 50%. Rezé et communes voisines.",
   },
   robots: {
     index: true,
@@ -36,11 +36,12 @@ export const metadata: Metadata = {
       follow: true,
     },
   },
-  viewport: {
-    width: "device-width",
-    initialScale: 1,
-    maximumScale: 5,
-  },
+};
+
+export const viewport = {
+  width: "device-width",
+  initialScale: 1,
+  maximumScale: 5,
 };
 
 export default function RootLayout({

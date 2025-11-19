@@ -1,5 +1,6 @@
 import Navigation from "./components/Navigation";
 import Hero from "./components/Hero";
+import TrustBadges from "./components/TrustBadges";
 import Services from "./components/Services";
 import Zones from "./components/Zones";
 import Appointment from "./components/Appointment";
@@ -15,6 +16,7 @@ export default function Home() {
       <Navigation />
       <main>
         <Hero />
+        <TrustBadges />
         <Services />
         <Zones />
         <Appointment />

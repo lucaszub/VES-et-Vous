@@ -3,7 +3,7 @@ export default function Testimonials() {
     <section className="section" style={{ backgroundColor: '#ffffff' }}>
       <div className="container">
         <h2 className="text-3xl md:text-4xl font-bold text-center" style={{ color: 'var(--primary-blue)', marginBottom: '1.5rem' }}>
-          Témoignages
+          Ils Nous Font Confiance
         </h2>
         <p className="text-center text-gray-600 text-base md:text-lg" style={{ marginBottom: '4rem' }}>
           Ce que disent nos clients de Rezé, Bouguenais et alentours

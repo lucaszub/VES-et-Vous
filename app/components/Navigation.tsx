@@ -36,7 +36,7 @@ export default function Navigation() {
 
           {/* Menu Desktop */}
           <div
-            className="hidden md:flex items-center"
+            className="hidden gap-3 md:flex items-center"
             style={{ gap: "0.5rem" }}
           >
             {menuItems.map((item) => (
@@ -49,17 +49,6 @@ export default function Navigation() {
                 {item.label}
               </a>
             ))}
-            <a
-              href="tel:+33603163070"
-              className="px-4 py-2 rounded-lg font-semibold"
-              style={{
-                backgroundColor: "var(--primary-blue)",
-                color: "white",
-                marginLeft: "0.5rem",
-              }}
-            >
-              📞 06.03.16.30.70
-            </a>
           </div>
 
           {/* Bouton Hamburger Mobile */}

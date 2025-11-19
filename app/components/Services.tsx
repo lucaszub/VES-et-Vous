@@ -52,7 +52,7 @@ export default function Services() {
           className="text-3xl md:text-4xl font-bold text-center"
           style={{ color: "var(--primary-blue)", marginBottom: "1.5rem" }}
         >
-          Nos Services
+          Nos Services à Domicile à Rezé
         </h2>
         <p className="text-center text-gray-600 text-base md:text-lg" style={{ marginBottom: "4rem" }}>
           Des prestations de qualité adaptées à vos besoins
