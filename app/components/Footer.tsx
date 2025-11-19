@@ -12,9 +12,6 @@ export default function Footer() {
               Services à domicile de qualité sur Rezé, Bouguenais, Bouaye, La
               Montagne et Saint-Jean-de-Boiseau
             </p>
-            <p className="text-sm opacity-90">
-              Agrément SAP n° [Numéro d'agrément]
-            </p>
           </div>
 
           <div>
