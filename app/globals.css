@@ -1,9 +1,14 @@
 @import "tailwindcss";
 
+@theme {
+  --color-scheme: light;
+}
+
 :root {
-  --primary-blue: #2A6B84;
-  --light-blue: #E1F0F7;
-  --orange: #FF7E36;
+  color-scheme: light;
+  --primary-blue: #2a6b84;
+  --light-blue: #e1f0f7;
+  --orange: #ff7e36;
   --text-color: #333333;
   --background: #ffffff;
 }
@@ -24,7 +29,8 @@
 body {
   background: var(--background);
   color: var(--text-color);
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, sans-serif;
   line-height: 1.6;
 }
 
