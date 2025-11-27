@@ -1,38 +1,138 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# VES et Vous - Site Web
 
 ## Getting Started
 
-First, run the development server:
-
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+---
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## TODO List
 
-## Learn More
+### Tarification
 
-To learn more about Next.js, take a look at the following resources:
+- [x] Ajuster le prix des agences par rapport aux agences style O2
+- [x] Demander à maman le prix pour O2 et le contrat de travail
+- [ ] Garder le même tarif pour les clients actuels
+- [ ] Se renseigner du prix pour :
+  - [ ] Repassage à Domicile
+  - [ ] Garde d'enfant
+  - [ ] Jardinage
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### Contenu du Site
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- [ ] Ajouter section Crédit d'impôt
+- [ ] Mettre à jour les plafonds URSSAF par rapport à cette année
+- [ ] Ajouter agrément garde d'enfant
+- [ ] Changer le numéro de téléphone
+
+### Fonctionnement / Processus
+
+- [ ] Corriger section "Comment ça fonctionne" (ce n'est pas le client qui déclare les heures)
+- [ ] Clarifier le processus avec exemple Maman :
+  - [ ] Déclaration de la facture (déclaration des heures effectuées chez le client)
+  - [ ] Envoi du mail
+  - [ ] Le paiement est versé directement sur le compte de Sandra
+  - [ ] Si le client ne valide pas sous 3 jours, c'est validé automatiquement
+
+### Administratif
+
+- [ ] Ouvrir un compte à l'URSSAF pour avoir statut prestataire de services
+- [ ] Revoir la phrase : "Je me propose de tout mettre en place pour vous de l'inscription à la déclaration"
+- [ ] Enlever "l'employeur" de la section "Par Claire"
+
+### Section About
+
+- [ ] Rajouter une section que la propreté c'est important pour moi etc
+
+---
+
+## Comment ça fonctionne - Guide URSSAF & Services à la Personne
+
+### Mode Prestataire (VES et Vous)
+
+**En tant que prestataire de services, VES et Vous gère tout pour vous :**
+
+- **Aucune démarche administrative** pour le client
+- **Pas de contrat de travail** à rédiger
+- **Pas de déclaration URSSAF** à effectuer
+- **Pas de cotisations sociales** à calculer ou payer
+
+L'organisme prestataire (VES et Vous) est l'employeur du salarié. Vous achetez une prestation de service et recevez une facture.
+
+### Ce que le client doit faire
+
+#### 1. Validation et Paiement
+
+- **Réception de la facture** avec les heures effectuées
+- **Validation sous 3 jours** - Si pas de validation, c'est validé automatiquement
+- **Paiement** versé directement sur le compte de Sandra (VES et Vous)
+
+#### 2. Nouvelle Obligation 2025 - Déclaration Fiscale
+
+Depuis février 2025, pour bénéficier du crédit d'impôt, vous devez déclarer :
+
+- L'identité du prestataire (VES et Vous)
+- Le type de service (ménage, garde d'enfants, accompagnement senior)
+- Le montant exact pour chaque service
+
+### Avantages Fiscaux
+
+#### Crédit d'Impôt
+
+- **50% de réduction fiscale** sur les dépenses
+- **Plafond annuel : 12 000 €** (peut être majoré selon situation)
+- **Avance Immédiate disponible** : bénéficiez du crédit d'impôt directement à chaque facture sans attendre la déclaration annuelle
+
+#### Comment bénéficier de l'Avance Immédiate
+
+L'URSSAF propose un service permettant de déduire automatiquement 50% du montant à chaque déclaration ou facturation. Ce service est gratuit et optionnel.
+
+### Différence Prestataire vs Particulier Employeur
+
+| Aspect               | Mode Prestataire (VES et Vous) | Particulier Employeur (CESU) |
+| -------------------- | ------------------------------ | ---------------------------- |
+| Employeur            | L'organisme                    | Le client                    |
+| Contrat de travail   | Non requis                     | Obligatoire                  |
+| Déclaration URSSAF   | Gérée par l'organisme          | Par le client (CESU)         |
+| Cotisations sociales | Incluses dans la facture       | À payer par le client        |
+| Bulletins de paie    | Gérés par l'organisme          | À fournir par le client      |
+| Avantage fiscal      | 50% de crédit d'impôt          | 50% de crédit d'impôt        |
+
+### Pour les Clients : Aucune Complexité Administrative
+
+Contrairement au mode particulier employeur (CESU) où vous devez :
+
+- Déclarer chaque mois les heures travaillées
+- Calculer et payer les cotisations
+- Gérer les bulletins de paie
+
+**Avec VES et Vous (mode prestataire), vous n'avez qu'à :**
+
+1. Profiter du service
+2. Valider la facture (ou laisser la validation automatique après 3 jours)
+3. Payer la facture
+4. Déclarer aux impôts pour bénéficier du crédit d'impôt
+
+---
 
 ## Deploy on Vercel
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme).
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Check out the [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
 
-https://images.unsplash.com/photo-1600880292203-757bb62b4baf?ixlib=rb-4.0.3&auto=format&fit=crop&w=1350&q=80
+Sources :
+
+- https://www.urssaf.fr/accueil/particulier/particulier-employeur/declarer-votre-salarie/particulier-aides-exonerat
+  ions.html
+- https://www.economie.gouv.fr/cedef/services-a-la-personne
+- https://www.urssaf.fr/accueil/services/services-particuliers/service-cesu/declarer-service-Cesu.html
+- https://www.servicesalapersonne.gouv.fr/beneficier-des-sap/comment-utiliser-services-la-personne/etre-particulier
+  -employeur
+- https://equipersenior.fr/credit-impot-service-personne-2025/
+
+06 51 47 62 11

@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import Image from "next/image";
 
 export default function Navigation() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -26,12 +27,15 @@ export default function Navigation() {
           style={{ height: "80px" }}
         >
           {/* Logo */}
-          <a
-            href="#accueil"
-            className="text-2xl font-bold"
-            style={{ color: "var(--primary-blue)" }}
-          >
-            VES et Vous
+          <a href="#accueil" className="flex items-center">
+            <Image
+              src="/Logo VES ET VOUS.png"
+              alt="VES et Vous - Services à domicile"
+              width={230}
+              height={230}
+              priority
+              style={{ objectFit: "contain" }}
+            />
           </a>
 
           {/* Menu Desktop */}

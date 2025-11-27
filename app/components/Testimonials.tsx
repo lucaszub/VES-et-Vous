@@ -9,8 +9,28 @@ export default function Testimonials() {
           Ce que disent nos clients de Rezé, Bouguenais et alentours
         </p>
 
-        <div className="flex justify-center">
-          <div className="card" style={{ backgroundColor: '#E1F0F7', maxWidth: '650px', width: '100%' }}>
+        <div className="grid md:grid-cols-2 gap-6">
+          {/* Avis Nathalie Zubiarrain */}
+          <div className="card" style={{ backgroundColor: '#E1F0F7' }}>
+            <div className="flex items-start" style={{ marginBottom: '1rem' }}>
+              <div className="w-14 h-14 rounded-full flex items-center justify-center text-white text-2xl font-bold" style={{ backgroundColor: 'var(--primary-blue)' }}>
+                N
+              </div>
+              <div style={{ marginLeft: '1rem', flex: 1 }}>
+                <h4 className="font-bold text-lg" style={{ marginBottom: '0.25rem' }}>Nathalie Zubiarrain</h4>
+                <p className="text-sm text-gray-600" style={{ marginBottom: '0.5rem' }}>Avis Google · il y a 4 jours</p>
+                <div style={{ fontSize: '1.5rem', letterSpacing: '2px', color: 'var(--orange)' }}>
+                  ★★★★★
+                </div>
+              </div>
+            </div>
+            <p className="text-gray-700" style={{ fontSize: '1.125rem', lineHeight: '1.8', fontStyle: 'italic' }}>
+              "Sandra est une personne très serviable, elle travaille pour embellir notre maison depuis plusieurs années et nous espérons le plus longtemps possible car nous n'avons rien à lui reprocher."
+            </p>
+          </div>
+
+          {/* Avis Ecosia24 */}
+          <div className="card" style={{ backgroundColor: '#E1F0F7' }}>
             <div className="flex items-start" style={{ marginBottom: '1rem' }}>
               <div className="w-14 h-14 rounded-full flex items-center justify-center text-white text-2xl font-bold" style={{ backgroundColor: 'var(--primary-blue)' }}>
                 E
@@ -18,8 +38,8 @@ export default function Testimonials() {
               <div style={{ marginLeft: '1rem', flex: 1 }}>
                 <h4 className="font-bold text-lg" style={{ marginBottom: '0.25rem' }}>Ecosia24</h4>
                 <p className="text-sm text-gray-600" style={{ marginBottom: '0.5rem' }}>1 avis · il y a 2 mois</p>
-                <div className="text-[#FF7E36]" style={{ fontSize: '1.5rem', letterSpacing: '2px' }}>
-                  ★★★★★★
+                <div style={{ fontSize: '1.5rem', letterSpacing: '2px', color: 'var(--orange)' }}>
+                  ★★★★★
                 </div>
               </div>
             </div>

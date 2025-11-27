@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 export default function Hero() {
   return (
     <section
@@ -16,7 +18,13 @@ export default function Hero() {
       }}
     >
       <div className="absolute inset-0 bg-black/40"></div>
-      <div className="max-w-4xl mx-auto text-center relative z-10 px-6" style={{ display: "flex", flexDirection: "column", gap: "1.25rem" }}>
+
+      {/* Logo en haut à gauche */}
+
+      <div
+        className="max-w-4xl mx-auto text-center relative z-10 px-6"
+        style={{ display: "flex", flexDirection: "column", gap: "1.25rem" }}
+      >
         <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white drop-shadow-2xl leading-tight">
           Services à Domicile
           <br />

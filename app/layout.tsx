@@ -18,20 +18,41 @@ export const metadata: Metadata = {
   description:
     "Profitez de votre famille ! VES et Vous : ménage, garde d'enfants, repassage à Rezé et alentours. Crédit d'impôt 50%, intervenants qualifiés, 100% clients satisfaits. Devis gratuit 📞",
   keywords:
-    "aide à domicile Rezé, ménage à domicile Bouguenais, femme de ménage Bouaye, garde d'enfants La Montagne, repassage à domicile Saint-Jean-de-Boiseau, nettoyage bureau Rezé, services ménagers 44, CESU, crédit impôt 50%, services à la personne",
+    "aide à domicile Rezé, ménage à domicile Bouguenais, femme de ménage Bouaye, garde d'enfants La Montagne, repassage à domicile Saint-Jean-de-Boiseau, nettoyage bureau Rezé, services ménagers 44, CESU, crédit impôt 50%, services à la personne, prestataire SAP, avance immédiate URSSAF",
   authors: [{ name: "VES et Vous" }],
+  creator: "VES et Vous",
+  publisher: "VES et Vous",
+  metadataBase: new URL("https://vesetvous.fr"),
+  alternates: {
+    canonical: "/",
+  },
+  icons: {
+    icon: "/Logo VES ET VOUS.png",
+    apple: "/Logo VES ET VOUS.png",
+  },
   openGraph: {
     title: "VES et Vous | Services à Domicile Rezé - Crédit Impôt 50%",
     description:
       "Profitez de votre famille ! Ménage, garde d'enfants, repassage à Rezé, Bouguenais, Bouaye. Intervenants qualifiés, 100% clients satisfaits.",
     type: "website",
     locale: "fr_FR",
+    url: "https://vesetvous.fr",
+    siteName: "VES et Vous",
+    images: [
+      {
+        url: "/Logo VES ET VOUS.png",
+        width: 800,
+        height: 600,
+        alt: "VES et Vous - Services à domicile Rezé",
+      },
+    ],
   },
   twitter: {
     card: "summary_large_image",
     title: "VES et Vous - Services à Domicile Loire-Atlantique",
     description:
       "Ménage, garde d'enfants, repassage. Crédit d'impôt 50%. Rezé et communes voisines.",
+    images: ["/Logo VES ET VOUS.png"],
   },
   robots: {
     index: true,
@@ -39,7 +60,13 @@ export const metadata: Metadata = {
     googleBot: {
       index: true,
       follow: true,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1,
     },
+  },
+  verification: {
+    google: "",
   },
 };
 
@@ -58,10 +85,20 @@ export default function RootLayout({
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
     name: "VES et Vous",
+    image: "https://vesetvous.fr/Logo VES ET VOUS.png",
+    logo: "https://vesetvous.fr/Logo VES ET VOUS.png",
+    url: "https://vesetvous.fr",
     description:
       "Services d'aide à domicile : ménage, garde d'enfants, repassage à Rezé, Bouguenais, Bouaye, La Montagne et Saint-Jean-de-Boiseau",
     telephone: "+33603163070",
     email: "sandra.venturini44@gmail.com",
+    address: {
+      "@type": "PostalAddress",
+      addressLocality: "Rezé",
+      addressRegion: "Loire-Atlantique",
+      postalCode: "44400",
+      addressCountry: "FR",
+    },
     areaServed: [
       {
         "@type": "City",

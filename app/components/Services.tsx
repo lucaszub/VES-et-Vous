@@ -2,7 +2,7 @@ export default function Services() {
   const services = [
     {
       title: "Ménage à Domicile et Bureaux",
-      price: "25€/heure",
+      price: "30€/heure",
       description:
         "Service de ménage régulier ou ponctuel pour votre domicile et vos locaux professionnels à Rezé, Bouguenais, Bouaye, La Montagne et Saint-Jean-de-Boiseau",
       features: [
@@ -28,7 +28,7 @@ export default function Services() {
     },
     {
       title: "Repassage à Domicile",
-      price: "25€/heure",
+      price: "30€/heure",
       description:
         "Service de repassage professionnel à domicile ou avec retrait et livraison sur Rezé, Bouguenais, Bouaye et communes voisines",
       features: [
@@ -54,7 +54,10 @@ export default function Services() {
         >
           Nos Services à Domicile à Rezé
         </h2>
-        <p className="text-center text-gray-600 text-base md:text-lg" style={{ marginBottom: "4rem" }}>
+        <p
+          className="text-center text-gray-600 text-base md:text-lg"
+          style={{ marginBottom: "4rem" }}
+        >
           Des prestations de qualité adaptées à vos besoins
         </p>
 
@@ -63,7 +66,10 @@ export default function Services() {
             <div key={index} className="card">
               <h3
                 className="text-2xl font-bold"
-                style={{ color: "var(--primary-blue)", marginBottom: "1.25rem" }}
+                style={{
+                  color: "var(--primary-blue)",
+                  marginBottom: "1.25rem",
+                }}
               >
                 {service.title}
               </h3>
@@ -73,11 +79,28 @@ export default function Services() {
               >
                 {service.price}
               </div>
-              <p className="text-gray-600" style={{ marginBottom: "1.75rem", lineHeight: "1.7" }}>{service.description}</p>
-              <ul style={{ display: "flex", flexDirection: "column", gap: "1rem" }}>
+              <p
+                className="text-gray-600"
+                style={{ marginBottom: "1.75rem", lineHeight: "1.7" }}
+              >
+                {service.description}
+              </p>
+              <ul
+                style={{
+                  display: "flex",
+                  flexDirection: "column",
+                  gap: "1rem",
+                }}
+              >
                 {service.features.map((feature, idx) => (
                   <li key={idx} className="flex items-start">
-                    <span style={{ color: "var(--orange)", marginRight: "0.75rem", fontSize: "1.25rem" }}>
+                    <span
+                      style={{
+                        color: "var(--orange)",
+                        marginRight: "0.75rem",
+                        fontSize: "1.25rem",
+                      }}
+                    >
                       ✓
                     </span>
                     <span style={{ lineHeight: "1.6" }}>{feature}</span>
