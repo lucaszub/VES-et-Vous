@@ -53,10 +53,13 @@ export default function Contact() {
           </h3>
           <p className="text-3xl font-bold" style={{ marginBottom: "1.5rem" }}>
             <a href="tel:+33603163070" className="hover:underline">
-              06.03.16.30.70
+              06.51.47.62.11
             </a>
           </p>
-          <div className="flex flex-col sm:flex-row justify-center" style={{ gap: "1.5rem", marginBottom: "1.5rem" }}>
+          <div
+            className="flex flex-col sm:flex-row justify-center"
+            style={{ gap: "1.5rem", marginBottom: "1.5rem" }}
+          >
             <a
               href="tel:+33603163070"
               className="btn"
@@ -72,9 +75,7 @@ export default function Contact() {
               💬 Envoyez un SMS
             </a>
           </div>
-          <p className="text-sm opacity-90">
-            Lun-Ven : 8h-17h | Devis gratuit
-          </p>
+          <p className="text-sm opacity-90">Lun-Ven : 8h-17h | Devis gratuit</p>
         </div>
 
         <p className="text-center text-gray-600 mb-6">

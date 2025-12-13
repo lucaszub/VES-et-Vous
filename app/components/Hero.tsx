@@ -65,7 +65,7 @@ export default function Hero() {
         </div>
         <p className="text-white text-base md:text-lg drop-shadow-lg">
           <a href="tel:+33603163070" className="hover:underline font-semibold">
-            06.03.16.30.70
+            06.51.47.62.11
           </a>
         </p>
       </div>
