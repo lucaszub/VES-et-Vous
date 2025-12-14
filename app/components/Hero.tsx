@@ -37,7 +37,7 @@ export default function Hero() {
           nous prenons soin de votre quotidien
         </p>
 
-        <div className="inline-flex items-center gap-3 bg-white/95 backdrop-blur-sm px-6 py-3 rounded-full shadow-lg mx-auto">
+        <div className="flex items-center justify-center gap-3 bg-white/95 backdrop-blur-sm px-6 py-3 rounded-full shadow-lg w-fit mx-auto">
           <span className="text-2xl">🏅</span>
           <span
             className="text-sm md:text-base font-semibold"
@@ -59,12 +59,12 @@ export default function Hero() {
           <a href="tel:+33603163070" className="btn btn-primary">
             📞 Je prends rendez-vous
           </a>
-          <a href="sms:+33603163070" className="btn btn-secondary">
+          <a href="sms:+33651476211" className="btn btn-secondary">
             💬 Être rappelé(e)
           </a>
         </div>
         <p className="text-white text-base md:text-lg drop-shadow-lg">
-          <a href="tel:+33603163070" className="hover:underline font-semibold">
+          <a href="tel:+33651476211" className="hover:underline font-semibold">
             06.51.47.62.11
           </a>
         </p>

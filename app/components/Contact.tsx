@@ -52,7 +52,7 @@ export default function Contact() {
             Réponse Rapide par Téléphone
           </h3>
           <p className="text-3xl font-bold" style={{ marginBottom: "1.5rem" }}>
-            <a href="tel:+33603163070" className="hover:underline">
+            <a href="tel:+33651476211" className="hover:underline">
               06.51.47.62.11
             </a>
           </p>
@@ -61,7 +61,7 @@ export default function Contact() {
             style={{ gap: "1.5rem", marginBottom: "1.5rem" }}
           >
             <a
-              href="tel:+33603163070"
+              href="tel:+33651476211"
               className="btn"
               style={{ backgroundColor: "white", color: "var(--primary-blue)" }}
             >

@@ -10,6 +10,27 @@ export default function Testimonials() {
         </p>
 
         <div className="grid md:grid-cols-2 gap-6">
+          {/* Avis Anita Regragui */}
+          <div className="card" style={{ backgroundColor: '#E1F0F7' }}>
+            <div className="flex items-start" style={{ marginBottom: '1rem' }}>
+              <div className="w-14 h-14 rounded-full flex items-center justify-center text-white text-2xl font-bold" style={{ backgroundColor: 'var(--primary-blue)' }}>
+                A
+              </div>
+              <div style={{ marginLeft: '1rem', flex: 1 }}>
+                <h4 className="font-bold text-lg" style={{ marginBottom: '0.25rem' }}>Anita Regragui</h4>
+                <p className="text-sm text-gray-600" style={{ marginBottom: '0.5rem' }}>Avis Google · il y a 20 heures · Nouveau</p>
+                <div style={{ fontSize: '1.5rem', letterSpacing: '2px', color: 'var(--orange)' }}>
+                  ★★★★★
+                </div>
+              </div>
+            </div>
+            <p className="text-gray-700" style={{ fontSize: '1.125rem', lineHeight: '1.8', fontStyle: 'italic' }}>
+              "Fraîchement arrivés sur le secteur, on nous a recommandé VESETVOUS pour l'entretien quotidien de notre maison.
+              En plus d'être sympathique, Sandra fait un travail soigné et minutieux et quelle bonne idée ce crédit d'impôt direct !!
+              Un service et un accompagnement au top. Je recommande 👍"
+            </p>
+          </div>
+
           {/* Avis Nathalie Zubiarrain */}
           <div className="card" style={{ backgroundColor: '#E1F0F7' }}>
             <div className="flex items-start" style={{ marginBottom: '1rem' }}>
