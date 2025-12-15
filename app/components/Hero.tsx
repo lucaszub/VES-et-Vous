@@ -21,10 +21,7 @@ export default function Hero() {
 
       {/* Logo en haut à gauche */}
 
-      <div
-        className="max-w-4xl mx-auto text-center relative z-10 px-6"
-        style={{ display: "flex", flexDirection: "column", gap: "1.25rem" }}
-      >
+      <div className="max-w-4xl mx-auto text-center relative z-10 px-6 flex flex-col items-center gap-5">
         <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white drop-shadow-2xl leading-tight">
           Services à Domicile
           <br />
@@ -55,13 +52,29 @@ export default function Hero() {
           Rezé • Bouguenais • La Montagne • Bouaye • Saint-Jean-de-Boiseau
         </p>
 
-        <div className="flex flex-col md:flex-row gap-4 justify-center px-8 md:px-0">
-          <a href="tel:+33603163070" className="btn btn-primary">
-            📞 Je prends rendez-vous
-          </a>
-          <a href="sms:+33651476211" className="btn btn-secondary">
-            💬 Être rappelé(e)
-          </a>
+        <div className="flex flex-col md:flex-row items-center gap-4 justify-center px-8 md:px-0">
+          <div className="flex flex-col md:flex-row gap-4 justify-center">
+            <a href="tel:+33603163070" className="btn btn-primary">
+              📞 Je prends rendez-vous
+            </a>
+            <a href="sms:+33651476211" className="btn btn-secondary">
+              💬 Être rappelé(e)
+            </a>
+          </div>
+          <div className="flex items-center gap-3 bg-white/95 backdrop-blur-sm px-4 py-3 rounded-xl shadow-lg border border-white/70">
+            <span className="text-xl">⏱️</span>
+            <div className="text-left">
+              <p
+                className="text-sm font-semibold"
+                style={{ color: "var(--primary-blue)" }}
+              >
+                Rappel en moins de 30 min
+              </p>
+              <p className="text-xs text-gray-700">
+                Du lundi au samedi, 9h-19h
+              </p>
+            </div>
+          </div>
         </div>
         <p className="text-white text-base md:text-lg drop-shadow-lg">
           <a href="tel:+33651476211" className="hover:underline font-semibold">
