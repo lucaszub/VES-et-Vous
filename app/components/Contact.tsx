@@ -1,26 +1,48 @@
 "use client";
 
 import { useState, FormEvent } from "react";
+import { sendEmail } from "@/lib/email";
 
 export default function Contact() {
   const [formData, setFormData] = useState({
     service: "",
     message: "",
+    email: "",
   });
-  const [showSuccess, setShowSuccess] = useState(false);
+  const [status, setStatus] = useState<
+    "idle" | "loading" | "success" | "error"
+  >("idle");
+  const [errorMessage, setErrorMessage] = useState("");
 
-  const handleSubmit = (e: FormEvent) => {
+  const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
 
-    // Simuler l'envoi du formulaire
-    console.log("Message envoyé:", formData);
+    setStatus("loading");
+    setErrorMessage("");
 
-    setShowSuccess(true);
-    setFormData({ service: "", message: "" });
+    try {
+      await sendEmail({
+        type: "contact",
+        service: formData.service,
+        message: formData.message,
+        email: formData.email,
+        reply_to: formData.email,
+      });
 
-    setTimeout(() => {
-      setShowSuccess(false);
-    }, 5000);
+      setStatus("success");
+      setFormData({ service: "", message: "", email: "" });
+    } catch (error) {
+      console.error("Erreur EmailJS (contact):", error);
+      setErrorMessage(
+        "Impossible d'envoyer le message pour le moment. Merci de réessayer dans un instant.",
+      );
+      setStatus("error");
+    } finally {
+      setTimeout(() => {
+        setStatus("idle");
+        setErrorMessage("");
+      }, 5000);
+    }
   };
 
   return (
@@ -125,16 +147,43 @@ export default function Contact() {
             ></textarea>
           </div>
 
+          <div className="mb-6">
+            <label htmlFor="contact-email" className="block mb-2 font-semibold">
+              Votre email *
+            </label>
+            <input
+              type="email"
+              id="contact-email"
+              required
+              value={formData.email}
+              onChange={(e) =>
+                setFormData({ ...formData, email: e.target.value })
+              }
+              placeholder="vous@example.com"
+              className="form-input"
+            />
+          </div>
+
           <div className="flex justify-center mt-4">
-            <button type="submit" className="btn btn-primary">
-              ✉️ Envoyer le message
+            <button
+              type="submit"
+              className="btn btn-primary"
+              disabled={status === "loading"}
+            >
+              {status === "loading" ? "Envoi..." : "✉️ Envoyer le message"}
             </button>
           </div>
 
-          {showSuccess && (
+          {status === "success" && (
             <div className="success-message mt-4">
               Merci pour votre message ! Nous vous répondrons dans les plus
               brefs délais.
+            </div>
+          )}
+
+          {status === "error" && (
+            <div className="error-message mt-4" role="alert">
+              {errorMessage}
             </div>
           )}
         </form>

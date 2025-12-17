@@ -8,6 +8,17 @@ npm run dev
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
+## Configuration EmailJS
+
+1. Copier `.env.local.example` en `.env.local` puis remplir :
+   ```
+   EMAILJS_PUBLIC_KEY=<clé publique EmailJS>
+   EMAILJS_SERVICE_ID=<service_id EmailJS>
+   EMAILJS_TEMPLATE_ID=<template_id EmailJS>
+   ```
+2. Le template EmailJS doit accepter les variables `type`, `service`, `message`, `creneau`, `date`, `email` et `reply_to` (les champs non utilisés par un formulaire seront simplement vides).
+3. En production (Vercel), renseigner les mêmes variables d'environnement dans le projet avant le build.
+
 ---
 
 ## TODO List
