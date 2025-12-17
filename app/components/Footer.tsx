@@ -27,10 +27,10 @@ export default function Footer() {
               <p>
                 <strong>Email :</strong>{" "}
                 <a
-                  href="mailto:sandra.venturini44@gmail.com"
+                  href="mailto:v.e.s.et.vous@gmail.com"
                   className="hover:underline"
                 >
-                  sandra.venturini44@gmail.com
+                  v.e.s.et.vous@gmail.com
                 </a>
               </p>
               <p>
